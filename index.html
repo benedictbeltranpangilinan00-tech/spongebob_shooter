@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spongebob Shooter Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Character Selection -->
+  <div id="charScreen" class="screen">
+    <h1>Choose Your Character</h1>
+    <div class="btns">
+      <button id="spongebobBtn">SpongeBob</button>
+      <button id="patrickBtn">Patrick</button>
+    </div>
+  </div>
+
+  <!-- Title Screen -->
+  <div id="titleScreen" class="screen" style="display:none">
+    <h1>Spongebob Shooter Game</h1>
+    <p>Defend Bikini Bottom!</p>
+    <div class="btns">
+      <button id="playBtn">PLAY</button>
+      <button id="howToBtn">How to Play</button>
+      <button id="aboutBtn">About</button>
+    </div>
+  </div>
+
+  <!-- How to Play -->
+  <div id="helpScreen" class="screen" style="display:none">
+    <h1>How to Play</h1>
+    <p>W / A / S / D — Move<br>Move mouse to aim — Auto-fire</p>
+    <button id="backBtn">Back</button>
+  </div>
+
+  <!-- About -->
+  <div id="aboutScreen" class="screen" style="display:none">
+    <h1>About</h1>
+    <p>Lead Programmer: Pangilinan, Benedict<br>Graphic Artist: Pruna, Abdullah</p>
+    <button id="aboutBackBtn">Back</button>
+  </div>
+
+  <!-- Game Over -->
+  <div id="gameOver" class="screen" style="display:none">
+    <h1>GAME OVER</h1>
+    <p>Score: <span id="finalScore">0</span></p>
+    <button id="replayBtn">Play Again</button>
+  </div>
+
+  <!-- Win Screen -->
+  <div id="winScreen" class="screen" style="display:none">
+    <h1>YOU WIN!</h1>
+    <p>Plankton defeated!</p>
+    <button id="winReplay">Play Again</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
